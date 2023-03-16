@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula formulário CSS</title>
+    <style>
+            body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, rgb(0,156,59),rgb(255, 233, 0));
+            }
+            .pcentral{
+                color: rgb(255,255,255);
+                background-color: rgba(0,0,0,0);
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                padding: 20px;
+                border-radius: 15px;
+            }
+            #submit{
+                background-image: linear-gradient(to right, rgb(255,233,0), rgb(0,156,59));
+            } 
+
+            legend{
+                background-color: rgba(67, 119, 24, 0.877);
+                border-radius: 5px;
+                text-align: center;
+                border: 3px rgb(146,233,13);
+                padding: 10px;
+            }
+        
+    </style>
+</head>
+<body>
+ <div class="pcentral">
+    <form>
+        <fieldset>
+            <legend> <b> Formulário para apoiar o Agro </b> </legend>
+            <label for="nome">NOME COMPLETO</label> <br>
+            <input type="text" name="nome" id="nome" placeholder="digite aqui"> <br>
+            <label for="nome">EMAIL</label> <br>
+            <input type="text" name="email" id="email" placeholder="digite aqui"> <br>
+            <label for="nome">ENDEREÇO</label> <br>
+            <input type="text" name="endereco" id="endereco" placeholder="digite aqui"> <br>
+            <p>SEXO</p>
+            <input type="radio" id="feminino" name="genero" value="feminino">
+            <label for="feminino"> FEMININO</label> <br>
+            <input type="radio" id="masculino" name="genero" value="masculino">
+            <label for="masculino"> MASCULINO</label> <br>
+            <input type="radio" id="outro" name="genero" value="outro">
+            <label for="outro"> OUTRO</label> <br>
+            <label for="datan"> DATA DE NASCIMENTO</label> <br>
+            <input type="date" name="datan" id="datan">
+            
+            <br><br><br>
+            <label for="cidade"> CIDADE</label> <br>
+            <input type="text" name="cidade" id="cidade" placeholder="digite aqui"> <br>
+            <label for="estado"> ESTADO</label> <br>
+            <input type="text" name="estado" id="estado" placeholder="digite aqui"> <br>
+            <label for="telefone"> TELEFONE</label> <br>
+            <input type="text" name="telefone" id="telefone" placeholder="digite aqui"> <br>
+            <br><br>
+            <input type="submit" name="submit" id="submit">
+        </fieldset>
+    </form>
+ </div>   
+ <A href="index2.html">Sobre Nós</A>
+</body>
+</html>
